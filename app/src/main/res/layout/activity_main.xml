@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ee4499"
+    android:paddingStart="20dp"
+    android:paddingEnd="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundTint="#FFFFFF"
+        android:text="@string/tv1"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/textView1"
+        android:autofillHints=""
+        android:layout_alignBaseline="@id/textView1"
+        android:inputType="number"
+        android:labelFor="@id/txt1"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv2"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textView2"
+        android:layout_below="@id/txt1"
+        android:layout_alignStart="@id/txt1"
+        android:labelFor="@id/txt2"
+        android:layout_alignBaseline="@id/textView2"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv3"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_alignBaseline="@id/textView3"
+        android:layout_alignStart="@id/txt2"
+        android:layout_toEndOf="@id/textView3"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:labelFor="@id/txtResult"
+        android:enabled="false"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn1" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_toEndOf="@id/btnSum"
+        android:layout_marginTop="30dp"
+        android:onClick="subtract"
+        android:layout_marginStart="10dp"
+        android:text="@string/btn2" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_toEndOf="@id/btnSub"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/btn3" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_toEndOf="@id/btnMul"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:onClick="divide"
+        android:text="@string/btn4" />
+
+
+</RelativeLayout>

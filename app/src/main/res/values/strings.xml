@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="btn1">Sum</string>
+    <string name="btn2">Sub</string>
+    <string name="btn3">Mul</string>
+    <string name="btn4">Div</string>
+    <string name="tv1">Number 1</string>
+    <string name="tv2">Number 2</string>
+    <string name="tv3">Result</string>
+</resources>
